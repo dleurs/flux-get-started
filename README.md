@@ -1,3 +1,32 @@
+Testing flux
+
+```bash
+export GHUSER="dleurs"
+```
+
+```bash
+--git-user=${GHUSER} \
+--git-email=${GHUSER}@users.noreply.github.com \
+--git-url=git@github.com:${GHUSER}/flux-get-started \
+--git-path=namespaces,workloads \
+--namespace=flux | kubectl apply -f -
+```
+```bash
+fluxctl identity --k8s-fwd-ns flux
+```
+Open GitHub, navigate to your fork, go to Setting > Deploy keys, click on Add deploy key, give it a Title, check Allow write access, paste the Flux public key and click Add key
+```bash
+```
+```bash
+```
+
+
+
+
+
+
+
+
 # flux-get-started
 
 [![CircleCI](https://circleci.com/gh/fluxcd/flux-get-started.svg?style=svg)](https://circleci.com/gh/fluxcd/flux-get-started)
